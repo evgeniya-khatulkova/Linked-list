@@ -27,4 +27,18 @@ class LinkedList
       @head = new_node
     end
   end
+
+  def size
+    sum = 0
+    if @head.next_node == nil
+      sum
+    else
+      current_node = @head
+      until current_node.next_node == nil
+        sum += 1
+        current_node = current_node.next_node
+      end
+      sum + 1
+    end
+  end
 end

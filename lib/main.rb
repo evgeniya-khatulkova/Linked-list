@@ -9,6 +9,10 @@ linked.prepend("cool")
 linked.prepend("yo")
 # p linked
 
-# p linked
+
 linked.append("end")
 p linked
+p linked.size
+
+second = LinkedList.new
+p second.size
