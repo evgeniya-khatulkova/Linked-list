@@ -13,7 +13,5 @@ linked.prepend("yo")
 linked.append("end")
 p linked
 p linked.size
-
-second = LinkedList.new
-p second.size
-p linked.at(2)
+linked.pop
+p linked
