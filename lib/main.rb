@@ -15,3 +15,4 @@ p linked
 p linked.size
 linked.pop
 p linked
+p linked.tail

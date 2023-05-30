@@ -42,6 +42,12 @@ class LinkedList
     end
   end
 
+  def tail
+    current_node = @head
+    current_node = current_node.next_node until current_node.next_node.nil?
+    current_node
+  end
+
   def at(index)
     sum = 0
     current_node = @head
@@ -55,10 +61,10 @@ class LinkedList
   def pop
     current_node = @head
     previous_node = current_node
-      until current_node.next_node.nil?
-        previous_node = current_node
-        current_node = current_node.next_node
-      end
-      previous_node.next_node = nil
+    until current_node.next_node.nil?
+      previous_node = current_node
+      current_node = current_node.next_node
+    end
+    previous_node.next_node = nil
   end
 end
