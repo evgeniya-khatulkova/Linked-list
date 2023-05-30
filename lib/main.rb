@@ -16,3 +16,4 @@ p linked.size
 
 second = LinkedList.new
 p second.size
+p linked.at(2)

@@ -41,4 +41,14 @@ class LinkedList
       sum + 1
     end
   end
+
+  def at(index)
+    sum = 0
+    current_node = @head
+    until sum == index
+      current_node = current_node.next_node
+      sum += 1
+    end
+    current_node
+  end
 end
