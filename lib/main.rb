@@ -15,7 +15,10 @@ p linked
 p linked.size
 linked.pop
 p linked
-p linked.tail
+# p linked.tail
 
-p linked.contains?("yo")
-p linked.contains?("myau")
+# p linked.contains?("yo")
+# p linked.contains?("myau")
+
+p linked.find('cool')
+p linked.find('myau')

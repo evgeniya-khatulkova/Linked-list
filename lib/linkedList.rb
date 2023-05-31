@@ -80,5 +80,21 @@ class LinkedList
     return false
   end
 
-  
+  #  returns the index of the node containing value, or nil if
+
+  def find(value)
+    sum = 0
+    current_node = @head
+    until current_node.next_node.nil?
+      if current_node.value == value
+        return sum
+      else
+        current_node = current_node.next_node
+        sum += 1
+      end
+    end
+    current_node.value == value ? sum : nil
+  end
+
+
 end
