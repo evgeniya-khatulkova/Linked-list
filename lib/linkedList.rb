@@ -96,5 +96,13 @@ class LinkedList
     current_node.value == value ? sum : nil
   end
 
-
+  def to_s
+    string = ''
+    current_node = @head
+    until current_node.next_node.nil?
+      string += "(#{current_node.value}) -> "
+      current_node = current_node.next_node
+    end
+    string + "(#{current_node.value}) -> nil"
+  end
 end

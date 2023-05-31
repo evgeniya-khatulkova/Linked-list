@@ -13,7 +13,7 @@ linked.prepend("yo")
 linked.append("end")
 p linked
 p linked.size
-linked.pop
+# linked.pop
 p linked
 # p linked.tail
 
@@ -22,3 +22,5 @@ p linked
 
 p linked.find('cool')
 p linked.find('myau')
+
+p linked.to_s
