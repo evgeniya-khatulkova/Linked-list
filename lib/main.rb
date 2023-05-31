@@ -24,5 +24,9 @@ p linked
 # p linked.find('myau')
 
 # p linked.to_s
- p linked.insert_at("wow!!!", 1)
- p linked
+
+p linked.insert_at('wow!!!', 1)
+p linked
+
+p linked.remove_at(1)
+p linked

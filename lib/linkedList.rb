@@ -124,6 +124,17 @@ class LinkedList
 
   # removes the node at the given index
   def remove_at(index)
+    sum = 0
+    current_node = @head
+    previous_node = @head
+    following_node = current_node.next_node
+    until sum == index
+      previous_node = current_node
+      current_node = current_node.next_node
+      following_node = following_node.next_node
+      sum += 1
+    end
+    previous_node.next_node = following_node
   end
 
 end
