@@ -20,7 +20,9 @@ p linked
 # p linked.contains?("yo")
 # p linked.contains?("myau")
 
-p linked.find('cool')
-p linked.find('myau')
+# p linked.find('cool')
+# p linked.find('myau')
 
-p linked.to_s
+# p linked.to_s
+ p linked.insert_at("wow!!!", 1)
+ p linked

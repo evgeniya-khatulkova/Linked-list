@@ -105,4 +105,25 @@ class LinkedList
     end
     string + "(#{current_node.value}) -> nil"
   end
+
+  # inserts a new node with the provided value at the given index
+
+  def insert_at(value, index)
+    sum = 0
+    new_node = Node.new(value)
+    current_node = @head
+    previous_node = @head
+    until sum == index
+      previous_node = current_node
+      current_node = current_node.next_node
+      sum += 1
+    end
+    new_node.next_node = current_node
+    previous_node.next_node = new_node
+  end
+
+  # removes the node at the given index
+  def remove_at(index)
+  end
+
 end
