@@ -16,3 +16,6 @@ p linked.size
 linked.pop
 p linked
 p linked.tail
+
+p linked.contains?("yo")
+p linked.contains?("myau")
