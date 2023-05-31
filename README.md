@@ -12,3 +12,8 @@ Add following functions for it to operate:
 - #contains?(value) (returns true if the passed in value is in the list and otherwise returns false)
 - #find(value) (returns the index of the node containing value, or nil if not found)
 - #to_s (represent your LinkedList objects as strings)
+
+Extra Credit:
+
+- #insert_at(value, index) that inserts a new node with the provided value at the given index.
+- #remove_at(index) that removes the node at the given index.
